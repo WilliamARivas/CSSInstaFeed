@@ -2,7 +2,6 @@
     background-color: #ffffff;
     height: 60px;
     text-align: Center;
-    display: inline-block;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,35 +16,47 @@ body {
 .post {
     background-color: white;
     width: 40%;
-    height: 375px;
+    height: 390px;
     margin: 40px auto;
 }
 #post1 {
     margin-top: 100px;
 }
 img {
-    height: 250px;
+    height: 300px;
     width: 100%;
-    object-fit: none;
+    object-fit: fill;
+    margin: 0 auto;
+}
+.postimg{
+    height: 300px;
 }
 .posttxt {
     word-wrap: break-word;
     white-space: pre-wrap;
     word-break: break-word;
-    padding: 5px;
+    padding: 10px;
     border-top: 0.5px solid lightgray;
+    height: 50px;
+}
+.posthead {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.5px solid lightgray;
 }
 .lefthead {
-    float: left;
     text-decoration: solid;
     font-weight: bold;
-    margin: 10px;
+    justify-content: left;
+    padding: 5px;
 }
 .righthead {
-    float: right;
     color: lightgray;
-    margin: 10px;
+    justify-content: right;
+    padding: 5px;
 }
-/*.posthead {
-    border-bottom: 0.5px solid lightgray;
-}*/
+#img4 {
+    object-fit: none;
+    height: 50%;
+    margin: auto;
+}
